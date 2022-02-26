@@ -1,0 +1,200 @@
+html, body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+   }
+
+header {
+       margin: 0 2%;
+   }
+
+body {
+    background-color: rgb(38, 49, 49);
+    color: rgb(222, 232, 240);
+}
+
+.header-text-container {
+    align-items: center;
+    display: flex;
+    /* filter: invert(100%); */
+    /* filter: contrast(100%); */
+    /* font-family: serif; */
+    /* justify-content: center; */
+    /* height: 100vh; */
+    margin: 5px 0;
+}
+.header-text {
+    /* color: aliceblue; */
+    font-size: 40px;
+    font-weight: 600;
+}
+.header-text-box{
+    height: 45px;
+    width: 110px;
+    background-color: rgb(222, 232, 240);
+    mix-blend-mode: exclusion;
+    transform: translate(-276px);
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    /* border: 1px solid #ccc;
+    background-color: #f1f1f1; */
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab input {
+    background-color: inherit;
+    color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab input:hover {
+    background-color: #ddd;
+    color: rgb(38, 49, 49);
+  }
+  
+  /* Create an active/current tablink class */
+  .tab input.active {
+    background-color: #ccc;
+    color: rgb(38, 49, 49);
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+  }
+  
+  /* Fade in tabs */
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .home-hero-container {
+      width: 100%;
+
+  }
+
+  .hero-img {
+    height: 100vh;
+    width: 100%;
+    background-image:  url("./img/myOceanImg.png");
+    /* background-size: 100% 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 6vh;
+  }
+
+  .hero-text:hover {
+      background-color: rgba(167, 209, 209, 0.315);
+      padding: 5px 20px;
+      color: rgba(35, 71, 71, 0.616);
+      border-radius: 4%;
+  }
+
+  .btn-component-placement {
+    z-index: 1;
+      position: fixed;
+      left: 2%;
+      top: 4%;
+  }
+
+  #projectSection {
+      /* padding-top: 200px ; */
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+grid-template-rows: repeat(2, 300px);
+  }
+
+  .project-card {
+    text-align: center;
+    background-color: #007D88;
+    height: 250px;
+    width: 250px;
+    align-self: center;
+    justify-self: center;
+
+  }
+
+  .project-card p {
+      padding: 0 10px;
+  }
+
+
+/* CSS */
+.button-55 {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+  footer{
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding-top: 10px;
+    margin: auto;
+    text-align:center;
+}
+

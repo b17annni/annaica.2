@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bubsStyle.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="bubs.js" defer></script>
+    <script src="../mybtncomponent.js"></script>
+
+    <link rel="icon" 
+      type="image/png" 
+      href="../img/iconheart.png">
+    <title>Bubbels</title>
+</head>
+<body id="body" class="bubs-body">
+    <span class="btn-component-placement"><btn-component></btn-component></span>
+<section id="theMainBtns">
+</section>
+<section id="mainSection">
+</section>
+<button class="button-53" onclick="style.display = 'none'" id="goFS">Go fullscreen</button>
+<script>
+var goFS = document.getElementById("goFS");
+goFS.addEventListener("click", function() {
+
+const elem = document.documentElement;
+if (elem.requestFullscreen) {elem.requestFullscreen()}
+
+}, false);
+</script>
+    
+</body>
+</html>

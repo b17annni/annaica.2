@@ -1,0 +1,25 @@
+#story-time-body {
+    background-color: rgb(183, 152, 212);
+    text-align: center;
+    color: rgb(1, 27, 49);
+}
+
+.header-beemer{
+    padding: 20px 0;
+    background: linear-gradient(45deg, #4d4902, #f31212);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block
+}
+
+.my-btn-class{
+    background-color: aliceblue;
+    margin: 5px;
+}
+
+.quote-card {
+    margin: 20px;
+}

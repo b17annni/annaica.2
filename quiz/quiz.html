@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <link rel="stylesheet" href="quizStyle.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="quizJS.js" defer></script>
+    <script src="../mybtncomponent.js" defer></script>
+
+    <link rel="icon" 
+      type="image/png" 
+      href="../img/iconheart.png">
+    <title>Quiz</title>
+</head>
+<body>
+    <section class="top-img">
+        <img src="../img/bobss.png">
+    </section>
+    <btn-component class="btn-component-placement"></btn-component>
+
+    <section id="app">
+        <section class="d-flex justify-content-center">
+      
+            <section v-if="showScore">
+                <span
+                title="Results"
+                style="max-width: 20rem;"
+                >
+                You Scored {{score}} of {{questions.length}}
+                <br>
+                <a @click="restartQuiz()" class="againBtn">Try again?</a>
+            </span>
+        
+            </section>
+            <section class="card-q" v-else>
+            <span v-if="!startQuiz">
+          
+          
+              <a @click="startQuizFunc()" class="againBtn">Start Quiz</a>
+            
+            </span>
+            <span v-else>
+        
+           <span class="card-text">
+              Question No.{{currentQuestion + 1}} of {{questions.length}}
+           </span>
+            <br>
+          
+             <span class="card-text">
+             </span>
+            <span class="card-text">
+              {{questions[currentQuestion].questionText}}
+            </span>
+            <section class="answer-section">
+            <a :key="index" v-for="(option, index) in questions[currentQuestion].answerOptions" @click="handleAnswerClick(option.isCorrect)" class="ans-option-btn" variant="primary">{{option.answerText}}</a>
+            </section>
+            </span>
+          </section>
+          </section>
+    </section>
+    
+</body>
+</html>
