@@ -2,7 +2,7 @@ const projects = [
     {proName: 'The Dots', link: './dots/dots.html', description: 'A small game of clicking the dots. This project is written with ReactJS.'},
     {proName: 'Story Time', link: './storytime/storytime.html', description: 'Find out your future and get some advice. This project is written with JavaScript.'},
     {proName: 'Quiz', link: './quiz/quiz.html', description: 'The Bobs burger quiz. How many quotes can you? This project was written with VueJS'},
-    {proName: 'Bubbel-Dots', link: './bubs/bubs.html', description: 'A fun little page with an assortment of small activities. This project was made for my niece and is written with JavaScript'}
+    {proName: 'Bubbel-Dots', link: './bubs/bubs.html', description: 'This project was made for my niece and is written with JavaScript'}
 ]
 
 const jokes = [{line: 'What do you call a fun mountain?', punch: 'Hill-arious'}]
