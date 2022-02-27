@@ -126,6 +126,7 @@ body {
   }
 
   #projectSection {
+    margin: 4%;
 height:100%;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -152,8 +153,8 @@ grid-gap: 35px;
       color: rgb(0, 0, 0);
   }
   .about-me-card {
-     margin: 8%;
-     padding: 5%;
+     margin: 5%;
+     padding: 3%;
   }
 
 
