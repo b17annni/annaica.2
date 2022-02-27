@@ -15,20 +15,14 @@ body {
 .header-text-container {
     align-items: center;
     display: flex;
-    /* filter: invert(100%); */
-    /* filter: contrast(100%); */
-    /* font-family: serif; */
-    /* justify-content: center; */
-    /* height: 100vh; */
     margin: 5px 0;
 }
 .header-text {
-    /* color: aliceblue; */
     font-size: 40px;
     font-weight: 600;
 }
 .header-text-box{
-    height: 45px;
+    height: 55px;
     width: 110px;
     background-color: rgb(222, 232, 240);
     mix-blend-mode: exclusion;
@@ -107,16 +101,21 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    padding: 15px 20px;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 6vh;
+    font-size: 5vh;
   }
 
-  .hero-text:hover {
-      background-color: rgba(167, 209, 209, 0.315);
-      padding: 5px 20px;
-      color: rgba(35, 71, 71, 0.616);
-      border-radius: 4%;
+  .hero-text p {
+      background-color: #41403e;
+      color: #41403e;
+  }
+
+  .hero-text p:hover {
+    background-color: rgba(255, 255, 255, 0.671);
+    color: rgba(35, 71, 71, 0.795);
+
   }
 
   .btn-component-placement {
@@ -127,10 +126,11 @@ body {
   }
 
   #projectSection {
-      /* padding-top: 200px ; */
+height:100%;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-grid-template-rows: repeat(2, 300px);
+grid-gap: 35px;
+/* grid-template-rows: repeat(4, 290px); */
   }
 
   .project-card {
@@ -145,6 +145,15 @@ grid-template-rows: repeat(2, 300px);
 
   .project-card p {
       padding: 0 10px;
+  }
+
+  .mode {
+      background-color: #DEE8F0;
+      color: rgb(0, 0, 0);
+  }
+  .about-me-card {
+     margin: 8%;
+     padding: 5%;
   }
 
 
@@ -190,10 +199,9 @@ grid-template-rows: repeat(2, 300px);
 }
 
   footer{
-    bottom: 0;
     width: 100%;
     height: 60px;
-    padding-top: 10px;
+    padding-top: 30px;
     margin: auto;
     text-align:center;
 }

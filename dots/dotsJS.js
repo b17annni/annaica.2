@@ -16,14 +16,8 @@ class MainDotsBody extends React.Component {
     this.PlayAgain = this.PlayAgain.bind(this)
 }
 
-componentDidMount () {
- 
-
-}
-
 Start () {
   this.setState({status: 1})
-  // window.setInterval(this.MyTimer, 1000)
   this.MyTimer()
 }
 
@@ -31,7 +25,6 @@ MyTimer () {
   if(this.state.myCount >= 0){
     this.timer = setTimeout(() => {
                    this.setState({myCount: this.state.myCount -= 1})
-                   console.log(this.state.myCount)
     this.MyTimer()
                }, 1000)
 
@@ -44,7 +37,6 @@ MyTimer () {
   
 MyScore(x) {
   this.setState({userScore: this.state.userScore + x});
-  console.log('hhhhh');
 }
 
 PlayAgain () {
@@ -56,7 +48,6 @@ render() {
     <>
     <MyHeader />
     <section className="dots-body">
-
        <section id="startPage" style={{display: this.state.status === 0 ? 'block' : 'none'}}>
          <input className="button-36" type="button" value="Start" onClick={()=>{this.Start()}}  />
       </section>

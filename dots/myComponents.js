@@ -18,19 +18,16 @@ class MyDotz extends React.Component {
         window.setInterval(this.MoveMe, 1000)
         switch(this.props.mySize) {
             case 1:
-                console.log('one');
                 const sectionOne = document.getElementById(this.props.myId)
                 sectionOne.classList.add('big-dot')
                 this.setState({score: 5})
                 break;
             case 2:
-                console.log('two');
                 const sectionTwo = document.getElementById(this.props.myId)
                 sectionTwo.classList.add('medium-dot')
                 this.setState({score: 50})
                 break;
             case 3:
-                console.log('three');
                 const sectionThree = document.getElementById(this.props.myId)
                 sectionThree.classList.add('small-dot')
                 this.setState({score: 100})

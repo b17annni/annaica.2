@@ -1,11 +1,11 @@
-console.log('main<JS here');
 const projects = [
-    {proName: 'The Dots', projectImg: './img/gas.png', link: './dots/dots.html', gitLink: 'gitLinkHere', description: 'A small game of clicking the dots. This project is written with ReactJS and is a game that is both fun and stressful.'},
-    {proName: 'Story Time', projectImg: './img/gas.png', link: './storytime/storytime.html', gitLink: 'gitLinkHere', description: 'Find out your future and get some advice. This project is written with vanilla javascript and is a silly litte thing.'},
-    {proName: 'Quiz', projectImg: './img/gas.png', link: './quiz/quiz.html', gitLink: 'gitLinkHere', description: 'The Bobs burger quiz. How many can you? This project was written with VueJS'},
-    {proName: 'Bubbel-Dots', projectImg: './img/gas.png', link: './bubs/bubs.html', gitLink: 'gitLinkHere', description: 'A fun little side that i made for my niece'}
-    // {proName: 'WIP', projectImg: './img/gas.png', link: 'theLinkHere', gitLink: 'gitLinkHere', description: 'Description pending'}
+    {proName: 'The Dots', link: './dots/dots.html', description: 'A small game of clicking the dots. This project is written with ReactJS.'},
+    {proName: 'Story Time', link: './storytime/storytime.html', description: 'Find out your future and get some advice. This project is written with JavaScript.'},
+    {proName: 'Quiz', link: './quiz/quiz.html', description: 'The Bobs burger quiz. How many quotes can you? This project was written with VueJS'},
+    {proName: 'Bubbel-Dots', link: './bubs/bubs.html', description: 'A fun little page with an assortment of small activities. This project was made for my niece and is written with JavaScript'}
 ]
+
+const jokes = [{line: 'What do you call a fun mountain?', punch: 'Hill-arious'}]
 const mainSection = document.querySelector('#projectSection')
 
 projects.forEach(element => {
@@ -39,4 +39,20 @@ function openTab(event, tabName) {
   }
 
   document.getElementById("defaultOpen").click();
+
+  const jokeText = document.getElementById('heroText')
+
+  jokeText.innerHTML = `<h2>${jokes[0].line}</h2><p>${jokes[0].punch}</p>`
+  
+        let toggle = true
+        const theCard = document.querySelector('.about-me-card')
+        const icon = document.querySelector('.my-mode')
+        icon.onclick = () => {
+            toggle ? theCard.classList.add('mode') : theCard.classList.remove('mode')
+            toggle = !toggle
+
+        }
+
+
+
 
